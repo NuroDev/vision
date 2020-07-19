@@ -198,7 +198,7 @@
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\bin\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
+      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\code\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
 </Command>
     </PostBuildEvent>
     <FxCompile />
@@ -292,7 +292,7 @@
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\bin\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
+      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\code\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
 </Command>
     </PostBuildEvent>
     <FxCompile />
@@ -383,7 +383,7 @@
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\bin\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
+      <Command>copy /Y "$(SolutionDir)vendor\assimp\build\code\$(Configuration)\assimp.dll" "$(SolutionDir)$(Platform)\$(Configuration)\assimp.dll"
 </Command>
     </PostBuildEvent>
     <FxCompile />
@@ -513,7 +513,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vendor\assimp\build\code\assimp.vcxproj">
-      <Project>{e81aceb6-c6b9-386d-9936-a1ab6b52c27b}</Project>
+      <Project>{3904b369-e3b4-352f-b208-fdf45c6fd03b}</Project>
     </ProjectReference>
     <ProjectReference Include="..\vendor\DirectXMesh\DirectXMesh\DirectXMesh_Desktop_2019.vcxproj">
       <Project>{6857f086-f6fe-4150-9ed7-7446f1c1c220}</Project>
