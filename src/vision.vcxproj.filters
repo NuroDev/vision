@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Objects\WorldObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\WorldLight.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderers\PostProcessing.cpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui_demo.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui_draw.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui_impl_dx11.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui_impl_win32.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\imgui\imgui_widgets.cpp">
+      <Filter>Libraries\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Config\Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\FreeCam.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\FirstPersonCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Terrain.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Window.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\FastNoise.cpp" />
+    <ClCompile Include="Graphics\Renderers\DeferredBuffer.cpp" />
+    <ClCompile Include="Graphics\Renderers\DeferredShader.cpp" />
+    <ClCompile Include="Graphics\Renderers\LightShader.cpp" />
+    <ClCompile Include="Graphics\ConstantBuffer.cpp" />
+    <ClCompile Include="Model\Model.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5c65bb77-486a-4c4e-a1b8-db822f520520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{29a39283-1c14-4dc0-9da2-8ea06352ea2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders">
+      <UniqueIdentifier>{7223e20c-1371-49bb-97d0-8117b6b97369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Textures">
+      <UniqueIdentifier>{74c35b89-b5e2-4449-b702-5384e3637633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{caa5c3a6-ec15-4e72-9a6c-57ba7f020908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{09e31586-48de-42c8-a8da-af46b6e22cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{8284ea64-45bc-4aad-a999-202a686a4cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Renderers">
+      <UniqueIdentifier>{2c65beb6-1fd7-45b5-adbf-77d92378e18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4eb6ccfb-3d95-4a6d-aa02-ab54a3d90199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{225daa54-e9e4-49b5-a40b-d0ca15b3b528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{55340e2f-b36a-4cf4-84a5-5d4c21c5a269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{aa466a1e-6bf4-4a5e-b6f1-61365eef431e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\imgui">
+      <UniqueIdentifier>{79ff2700-cfc6-418b-9a79-7081a45a5c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{95f90fa1-ab02-4895-bd4b-8a54b200ff45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Terrain">
+      <UniqueIdentifier>{adc39655-145f-4c76-95bd-09b024f919a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="Util\Resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="Objects\Cube.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\WorldObject.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\WorldLight.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Structures.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Helpers.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\PostProcessing.h">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Defaults.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Structrures.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Mesh.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Texture.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imconfig.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imgui.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imgui_impl_dx11.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imgui_impl_win32.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imgui_internal.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imstb_truetype.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imstb_textedit.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\imgui\imstb_rectpack.h">
+      <Filter>Libraries\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Config\Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\FreeCam.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\FirstPersonCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\DiamondSquare.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\StaticTerrain.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Window.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\Procedural.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\FastNoise.h" />
+    <ClInclude Include="Objects\Sphere.h" />
+    <ClInclude Include="Graphics\Renderers\DeferredBuffer.h" />
+    <ClInclude Include="Graphics\Renderers\DeferredShader.h" />
+    <ClInclude Include="Graphics\Renderers\LightShader.h" />
+    <ClInclude Include="Graphics\Renderers\DeferredRenderer.h" />
+    <ClInclude Include="Objects\Plane.h" />
+    <ClInclude Include="Graphics\ConstantBuffer.h" />
+    <ClInclude Include="Model\Material.h" />
+    <ClInclude Include="Graphics\Layouts.h" />
+    <ClInclude Include="Model\Skeleton.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Graphics\Effect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\color.dds">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\displacement.dds">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\normals.dds">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Assets\Shaders\DeferredGeometry.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\DeferredLighting.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\Effects.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\Helper.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\NormalMapping.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\ParallaxMapping.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\PostProcessing.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\Terrain.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\Default.fx">
+      <Filter>Assets\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Architecture.cd" />
+  </ItemGroup>
+</Project>

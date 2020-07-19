@@ -1,0 +1,16 @@
+[submodule "vendor/DirectXMesh"]
+	path = vendor/DirectXMesh
+	url = https://github.com/microsoft/DirectXMesh
+[submodule "vendor/assimp"]
+	path = vendor/assimp
+	url = https://github.com/assimp/assimp
+	branch = assimp_5.0_release
+[submodule "vendor/DirectXTK"]
+	path = vendor/DirectXTK
+	url = https://github.com/Microsoft/DirectXTK
+[submodule "vendor/tinytoml"]
+	path = vendor/tinytoml
+	url = https://github.com/mayah/tinytoml.git
+[submodule "vendor/result"]
+	path = vendor/result
+	url = https://github.com/oktal/result

@@ -1,0 +1,56 @@
+[app]
+title = "Canvas | Basic"
+resolution = [ 1280, 720 ]
+icon = "./directx.ico"
+inspector = true
+metrics = true
+
+[app.camera]
+fov = 100.0
+nearZ = 1.0
+position = [0.0, 2.5, -10.0]
+
+[app.graphics]
+deferred = false
+post_processing = true
+transparency = false
+transparency_factor = 0.75
+vsync = true
+wireframe = false
+
+[scene]
+name = "Normal Mapping"
+
+[[scene.objects]]
+enabled = true
+id = 1
+model = 'Assets/Models/Sphere.obj'
+name = 'Sphere'
+position = [ 0.0, 0.0, 0.0 ]
+scale = [ 0.03, 0.03, 0.03 ]
+shader = 'Assets/Shaders/ParallaxMapping.fx'
+textures = ['Assets/Textures/cube_color.dds', 'Assets/Textures/cube_normals.dds', 'Assets/Textures/cube_displacement.dds']
+type = 'sphere'
+
+[[scene.objects]]
+enabled = false
+id = 2
+model = 'Assets/Models/Walking.fbx'
+name = 'Player'
+position = [ 0.0, 0.0, 0.0 ]
+scale = [ 0.03, 0.03, 0.03 ]
+shader = 'Assets/Shaders/ParallaxMapping.fx'
+type = 'entity'
+
+[[scene.objects]]
+color = [1.0, 1.0, 1.0, 1.0]
+enabled = false
+id = 3
+light_enabled = true
+light_type = 'point'
+model = 'Assets/Models/Sphere.obj'
+name = 'Light'
+position = [0.0, 3.0, 0.0]
+shader = 'Assets/Shaders/Default.fx'
+textures = ['Assets/Textures/cube_color.dds', 'Assets/Textures/cube_normals.dds']
+type = 'light'

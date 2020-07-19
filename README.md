@@ -17,15 +17,27 @@ The current state of the engine means the only available build platform currentl
 ###  📋 Requirements
 
 To setup and use the project you will need to have the following tools installed:
- - [Git](https://git-scm.com/)
- - [Visual Studio](https://visualstudio.microsoft.com/) 
+ - [Git](https://git-scm.com)
+ - [CMake](https://cmake.org) 
+ - [Visual Studio](https://visualstudio.microsoft.com) 
 
-###  ⬇️ Installation
+### ⬇️ Installation
 
 Clone the repository:
 ```shell
-git clone https://github.com/nurodev/vision.git
+git clone --recursive https://github.com/nurodev/vision.git
 ```
+
+### 🔧 Configuring
+To configure the project, there is only one key step that needs to be performed before you can open the project in Visual Studio and get up and running.
+This step is to run the [`configure_assimp.cmd`](./scripts/configure_assimp.cmd) script located inside the `scripts/` directory.
+Once the script has been run then there should be no further work required to get the project running.
+
+### 🚑 Support
+If you are having any issues with the project, either getting it up and running or using the project itself, feel free to open an [issue](https://github.com/nurodev/vision/issues).
+
+A common issue when using vision is setting up `assimp`, a core project dependency. If the script to configure `assimp` fails, I recommend this great
+tutorial by [Tomasz Gałaj](https://github.com/Shot511) on how to setup `assimp` for an OpenGL project: [shot511.github.io/how-to-setup-opengl-project-with-cmake](https://shot511.github.io/2018-05-29-how-to-setup-opengl-project-with-cmake).
 
 # 📄 License
 

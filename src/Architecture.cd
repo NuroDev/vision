@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="WorldObject">
+    <Position X="3.5" Y="19.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>EJQKAAAAAgABGgAAABhIgAAAAQABAASBBAQDUBQRBqA=</HashCode>
+      <FileName>Objects\WorldObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helpers">
+    <Position X="3.5" Y="11.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAgAAAA=</HashCode>
+      <FileName>Util\Helpers.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mesh">
+    <Position X="7.5" Y="22.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAQAAAAEEAAgAAAACAIABAAAARQAAAAQACABBAAAA=</HashCode>
+      <FileName>Model\Mesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cube">
+    <Position X="7.5" Y="20.5" Width="2.5" />
+    <InheritanceLine Type="WorldObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="20.188" />
+        <Point X="8.819" Y="20.188" />
+        <Point X="8.819" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAgAAAAAAAAAAAAAAAAAAAAAAABAAACAIAAAAA=</HashCode>
+      <FileName>Objects\Cube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere">
+    <Position X="13" Y="20.5" Width="2.5" />
+    <InheritanceLine Type="WorldObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="19.938" />
+        <Point X="14.319" Y="19.938" />
+        <Point X="14.319" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACAAAIAAA=</HashCode>
+      <FileName>Objects\Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plane">
+    <Position X="10.25" Y="20.5" Width="2.5" />
+    <InheritanceLine Type="WorldObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="20.063" />
+        <Point X="11.5" Y="20.063" />
+        <Point X="11.5" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAgAAAAAAAAAAAAAAAAICAIAAAAA=</HashCode>
+      <FileName>Objects\Plane.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terrain">
+    <Position X="15.75" Y="20.5" Width="4.25" />
+    <InheritanceLine Type="WorldObject" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="19.813" />
+        <Point X="17.875" Y="19.813" />
+        <Point X="17.875" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgEMAAAgABAFiBBINDAAABBgCQAABCQAEACAUIAIIA=</HashCode>
+      <FileName>Objects\Terrain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldLight">
+    <Position X="20.25" Y="20.5" Width="3" />
+    <InheritanceLine Type="WorldObject" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="19.688" />
+        <Point X="21.75" Y="19.688" />
+        <Point X="21.75" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAIAACAAAAAgAAABAAEAAgAAQAAAAAAAACABAAAQA=</HashCode>
+      <FileName>Objects\WorldLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transform">
+    <Position X="11.25" Y="22.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACSAAAAAAACAIAQCACAAAggAIAAAAkAIAAA=</HashCode>
+      <FileName>Math\Transform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graphics">
+    <Position X="7.25" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>BAQIBGVAIAoCIhJAADEiAQCQWEONiB4EAiAiCBEgQC8=</HashCode>
+      <FileName>Graphics\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window">
+    <Position X="11.25" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAACAAAABgAABAAABACAAIgAAABAAiCFiAAAQ=</HashCode>
+      <FileName>Graphics\Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PostProcessing">
+    <Position X="11.25" Y="5.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AJQAAAAABAACAgAgANgQAAQAAQAACACIAIAKABAAQAM=</HashCode>
+      <FileName>Graphics\Renderers\PostProcessing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightShader">
+    <Position X="15.5" Y="8.25" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>AJgAACAAAAAAAgACAAAAAAAAQQAAAACAAAACIBAAAAA=</HashCode>
+      <FileName>Graphics\Renderers\LightShader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeferredBuffer">
+    <Position X="15.5" Y="0.5" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAQAIAAAAAAAABEAAYAAAAAAAAAAAYACCBAAEAI=</HashCode>
+      <FileName>Graphics\Renderers\DeferredBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeferredShader">
+    <Position X="15.5" Y="4.75" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>AJgAAAAAAAAAAgAAAAAAAAAAQQAAAACAAAACIBAQAAA=</HashCode>
+      <FileName>Graphics\Renderers\DeferredShader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Config">
+    <Position X="3.5" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAQioAYGAgAAAABABMACKAgEAAAAQEgAAAACABQAAAA=</HashCode>
+      <FileName>Config\Config.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Application">
+    <Position X="3.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAgABABAAAgAAABAAAAgAAAACAAAAgAACABAAAAA=</HashCode>
+      <FileName>Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreeCam">
+    <Position X="11.25" Y="12" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAUAAAAAACgADBAAAAAAABIhQAQAIQDABUAAAA=</HashCode>
+      <FileName>Camera\FreeCam.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstPersonCamera">
+    <Position X="15.5" Y="12" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAQACQAAAAAAAAAgBDAAAAAAQIIIoAAABABDABAAAAI=</HashCode>
+      <FileName>Camera\FirstPersonCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstantBuffer">
+    <Position X="7.25" Y="15.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBREAAAAABAAAAAAAIAAAAAAACQAAghUAAAAAA=</HashCode>
+      <FileName>Graphics\ConstantBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshLoader">
+    <Position X="7.5" Y="27.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Loader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Texture">
+    <Position X="7.5" Y="29.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAQAAACAAAAAAABAAEAAAAQABAAAAA=</HashCode>
+      <FileName>Model\Texture.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Defaults">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Defaults::Graphics">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Model">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Application">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Camera">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Light">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Material" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Effects">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Terrain">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Defaults::Transform">
+        <TypeIdentifier>
+          <NewMemberFileName>Config\Defaults.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\Defaults.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ConstantBufferData">
+    <Position X="0.5" Y="21.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Graphics\ConstantBuffer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Skeleton">
+    <Position X="7.5" Y="32.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAACAABCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Skeleton.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Effects">
+    <Position X="11.25" Y="27.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAARAIECIAAAQAAQAAAAAACDgSACIBAAAgAAAAsk=</HashCode>
+      <FileName>Model\Effect.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="EffectsBuffer">
+    <Position X="0.5" Y="23.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Effect.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SimpleVertex">
+    <Position X="19.75" Y="12" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAIAAAAAACAIAAACAAAgAAAAAAA=</HashCode>
+      <FileName>Graphics\Layouts.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SimpleQuad">
+    <Position X="19.75" Y="14.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\Layouts.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TerrainType">
+    <Position X="0.5" Y="27" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Terrain.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextureType">
+    <Position X="0.5" Y="25.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAIAAQAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Texture.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
