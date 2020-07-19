@@ -39,6 +39,12 @@ If you are having any issues with the project, either getting it up and running 
 A common issue when using vision is setting up `assimp`, a core project dependency. If the script to configure `assimp` fails, I recommend this great
 tutorial by [Tomasz Gałaj](https://github.com/Shot511) on how to setup `assimp` for an OpenGL project: [shot511.github.io/how-to-setup-opengl-project-with-cmake](https://shot511.github.io/2018-05-29-how-to-setup-opengl-project-with-cmake).
 
+### ❤️ Credits
+
+All humanoid models (`.fbx`) models were provided by [Mixamo](https://www.mixamo.com).
+
+All other assets (Texture, models, etc) were provided by my academic institution. 
+
 # 📄 License
 
 MIT © [Ben Dixon](https://github.com/nurodev/vision/blob/master/LICENSE)
