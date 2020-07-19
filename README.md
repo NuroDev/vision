@@ -30,7 +30,7 @@ git clone --recursive https://github.com/nurodev/vision.git
 
 ### 🔧 Configuring
 To configure the project, there is only one key step that needs to be performed before you can open the project in Visual Studio and get up and running.
-This step is to run the [`configure_assimp.cmd`](./scripts/configure_assimp.cmd) script located inside the `scripts/` directory.
+This step is to run the [`configure.cmd`](./configure.cmd) script located in the root of the repository.
 Once the script has been run then there should be no further work required to get the project running.
 
 ### 🚑 Support
