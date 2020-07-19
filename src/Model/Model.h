@@ -5,7 +5,6 @@
 #include <assimp/postprocess.h>
 
 #include "../Config/Defaults.h"
-#include "../Math/Transform.h"
 #include "Mesh.h"
 
 class Model
@@ -51,7 +50,7 @@ private:
     HRESULT LoadMesh(aiMesh* pMesh, const aiScene* pScene);
 
     // [MODEL] Iterates through a provided material and load all textures from it
-    Result<std::vector<Texture*>, HRESULT> LoadMaterialTextures(const aiScene* pScene, const aiMaterial* pMaterial, const aiTextureType type, const std::string typeName) const;
+    Result<std::vector<Texture*>, HRESULT> LoadMaterialTextures(const aiScene* pScene, const aiMaterial* pMaterial, aiTextureType type, const std::string typeName);
 
 	std::vector<Mesh*> m_pMeshes;
 

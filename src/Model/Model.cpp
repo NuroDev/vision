@@ -91,7 +91,7 @@ void Model::Ui()
         }
 }
 
-void Model::Update(float)
+void Model::Update(float t)
 {
 
 }
@@ -156,12 +156,10 @@ HRESULT Model::LoadMesh(aiMesh* pMesh, const aiScene* pScene)
 {
     HRESULT hr = S_OK;
 	
+    // Data to fill
     std::vector<SimpleVertex> vertices;
     std::vector<UINT> indices;
     std::vector<Texture*> textures;
-
-    std::unordered_map<std::string, std::pair<int, aiMatrix4x4>> boneInfo;
-    std::vector<uint32_t> boneCounts(vertices.size(), 0);
 
     // Vertices
     for (unsigned int i = 0; i < pMesh->mNumVertices; i++)
@@ -176,10 +174,12 @@ HRESULT Model::LoadMesh(aiMesh* pMesh, const aiScene* pScene)
             vertex.Normal = XMFLOAT3(pMesh->mNormals[i].x, pMesh->mNormals[i].y, pMesh->mNormals[i].z);
 
         // Texture Coordinates
-        if (pMesh->mTextureCoords[0])
+        if (pMesh->mTextureCoords[0]) {
             vertex.TexCoord = XMFLOAT2(pMesh->mTextureCoords[0][i].x, pMesh->mTextureCoords[0][i].y);
-        else
+        }
+        else {
             vertex.TexCoord = XMFLOAT2(0.0f, 0.0f);
+        }
 
         vertices.push_back(vertex);
     }
@@ -200,65 +200,28 @@ HRESULT Model::LoadMesh(aiMesh* pMesh, const aiScene* pScene)
         for (unsigned int j = 0; j < pMesh->mFaces[i].mNumIndices; ++j)
             indices.push_back(pMesh->mFaces[i].mIndices[j]);
 
+    // TODO: Bones
+    //if (pMesh->HasBones())
+    //{
+    //	for (unsigned int i = 0; i < pMesh->mNumBones; ++i)
+    //	{
+    //		
+    //	}
+    //}
+
     // Materials
     if (pMesh->mMaterialIndex >= 0)
     {
         const aiMaterial* pMaterial = pScene->mMaterials[pMesh->mMaterialIndex];
 
         // Diffuse maps
-        const std::vector<Texture*> diffuseMaps = LoadMaterialTextures(pScene, pMaterial, aiTextureType_DIFFUSE, "texture_diffuse").unwrap(); // TODO: Safe unwrap
+        std::vector<Texture*> diffuseMaps = LoadMaterialTextures(pScene, pMaterial, aiTextureType_DIFFUSE, "texture_diffuse").unwrap(); // TODO: Safe unwrap
         textures.insert(textures.end(), diffuseMaps.begin(), diffuseMaps.end());
 
         // Specular maps
-        const std::vector<Texture*> specularMaps = LoadMaterialTextures(pScene, pMaterial, aiTextureType_SPECULAR, "texture_specular").unwrap(); // TODO: Safe unwrap
+        std::vector<Texture*> specularMaps = LoadMaterialTextures(pScene, pMaterial, aiTextureType_SPECULAR, "texture_specular").unwrap(); // TODO: Safe unwrap
         textures.insert(textures.end(), specularMaps.begin(), specularMaps.end());
     }
-
-	// Bones
-    if (pMesh->HasBones())
-        for (uint32_t i = 0; i < pMesh->mNumBones; ++i) {
-            const aiBone* pBone = pMesh->mBones[i];
-            boneInfo[pBone->mName.C_Str()] = { i, pBone->mOffsetMatrix };
-
-            // Loop through each vertex that have that bone        	
-            for (int j = 0; j < pBone->mNumWeights; j++) {
-                uint32_t id = pBone->mWeights[j].mVertexId;
-                float weight = pBone->mWeights[j].mWeight;
-                boneCounts[id]++;
-                switch (boneCounts[id]) {
-                case 1:
-                    vertices[id].boneIds.x = i;
-                    vertices[id].boneWeights.x = weight;
-                    break;
-                case 2:
-                    vertices[id].boneIds.y = i;
-                    vertices[id].boneWeights.y = weight;
-                    break;
-                case 3:
-                    vertices[id].boneIds.z = i;
-                    vertices[id].boneWeights.z = weight;
-                    break;
-                case 4:
-                    vertices[id].boneIds.w = i;
-                    vertices[id].boneWeights.w = weight;
-                    break;
-                default:
-                    break;
-                }
-            }
-        }
-
-        //for (uint32_t i = 0; i < pMesh->mNumBones; ++i)
-        //{
-        //    const aiBone* pBone = pMesh->mBones[i];
-
-        //    // Store the bones name
-        //    //boneNames.emplace_back(pBone->mName.C_Str());
-        //    boneNames.push_back(std::string(pBone->mName.C_Str()));
-
-        //	// Each bone's transform offset
-        //    boneOffsets.push_back(pBone->mOffsetMatrix);
-        //}
 
     // Push back the newly loaded mesh
     m_pMeshes.push_back(new Mesh(vertices, indices, textures));
@@ -266,7 +229,7 @@ HRESULT Model::LoadMesh(aiMesh* pMesh, const aiScene* pScene)
     return hr;
 }
 
-Result<std::vector<Texture*>, HRESULT> Model::LoadMaterialTextures(const aiScene* pScene, const aiMaterial* pMaterial, const aiTextureType type, const std::string typeName) const
+Result<std::vector<Texture*>, HRESULT> Model::LoadMaterialTextures(const aiScene* pScene, const aiMaterial* pMaterial, aiTextureType type, const std::string typeName)
 {
     // Create new textures vector to return
     std::vector<Texture*> textures;

@@ -2,17 +2,11 @@
 
 #include "Mesh.h"
 
-struct Bone
+struct Skeleton
 {
-    // Position of the bone in final array
-    int id = 0;
+    int numSubsets;
+    int numJoints;
 
-	// Name of the bone loaded from file
-    std::string name = "Unnamed bone";
-
-	// Each bone has it's one 4x4 transformation matrix
-    XMMATRIX offset;
-
-	// All the bones child bones (EG: 
-    std::vector<Bone> children = {};
+    std::vector<Joint> joints;
+    std::vector<Mesh> subsets;
 };
