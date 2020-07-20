@@ -10,6 +10,30 @@
   <br />
 </div>
 
+## ❓ About
+
+<details>
+  <summary>What is this?</summary>
+  
+  Vision is an experimental graphics research framework that was primarily began development during my 4th and final year of university to learn some more advanced graphical rendering techniques (In the case of Vision, primarily using DirectX11).
+
+  In an effort to continue learning some more advanced graphical rendering techniques, I have made some minor modifications to the original project and open sourced it so others are able to both contribute towards the project and also learn from it.
+  
+</details>
+
+<br />
+
+<details>
+  <summary>Why?</summary>
+  
+  When the project first began development towards the end of 2019, I began to quickly discover that the number of resources available to learn some more advanced graphics rendering techniques were few and far between.
+
+  As such I wanted to help try and give back and help others who may find themselves in a position that was similar to mine. With further development of the project anyone should be able to use this project to understand multiple graphical rendering techniques without having to reference a 10+ year old book.
+
+  When development of the project has progressed to a relatively stable point, work will begin on creating written documention for both using the project, along with in-depth analysis of all of the projects features and how each of them work. For example, a write up on normal mapping, how it works and why it is used.
+  
+</details>
+
 ## 🔨 Development
 
 The current state of the engine means the only available build platform currently is Window (Win32).
@@ -78,6 +102,6 @@ All humanoid models (`.fbx`) models were provided by [Mixamo](https://www.mixamo
 
 All other assets (Texture, models, etc) were provided by my academic institution. 
 
-# 📄 License
+## 📄 License
 
 MIT © [Ben Dixon](https://github.com/nurodev/vision/blob/master/LICENSE)
