@@ -2,10 +2,10 @@
 
 #include <functional>
 
-#include "../Graphics.h"
-#include "DeferredBuffer.h"
-#include "DeferredShader.h"
-#include "LightShader.h"
+#include "../Graphics.hpp"
+#include "DeferredBuffer.hpp"
+#include "DeferredShader.hpp"
+#include "LightShader.hpp"
 
 class DeferredRenderer
 {

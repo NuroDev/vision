@@ -1,4 +1,4 @@
-#include "DeferredShader.h"
+#include "DeferredShader.hpp"
 
 HRESULT DeferredShader::Init()
 {

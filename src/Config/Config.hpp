@@ -3,13 +3,13 @@
 #include <toml/toml.h>
 #include <result.h>
 
-#include "Structrures.h"
-#include "../Camera/FirstPersonCamera.h"
-#include "../Objects/Terrain.h"
-#include "../Objects/Cube.h"
-#include "../Objects/Plane.h"
-#include "../Objects/Sphere.h"
-#include "../Objects/WorldLight.h"
+#include "Structrures.hpp"
+#include "../Camera/FirstPersonCamera.hpp"
+#include "../Objects/Terrain.hpp"
+#include "../Objects/Cube.hpp"
+#include "../Objects/Plane.hpp"
+#include "../Objects/Sphere.hpp"
+#include "../Objects/WorldLight.hpp"
 
 class Config
 {

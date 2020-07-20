@@ -48,9 +48,6 @@
     <ClCompile Include="Graphics\Window.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Renderers\DeferredBuffer.cpp" />
-    <ClCompile Include="Graphics\Renderers\DeferredShader.cpp" />
-    <ClCompile Include="Graphics\Renderers\LightShader.cpp" />
     <ClCompile Include="Graphics\ConstantBuffer.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
@@ -59,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="Model\Model.cpp">
       <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderers\DeferredBuffer.cpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderers\DeferredShader.cpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderers\LightShader.cpp">
+      <Filter>Graphics\Renderers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,39 +112,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Objects\Cube.h">
-      <Filter>Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\WorldObject.h">
-      <Filter>Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\WorldLight.h">
-      <Filter>Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Util\Structures.h">
-      <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="Util\Helpers.h">
-      <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Renderers\PostProcessing.h">
-      <Filter>Graphics\Renderers</Filter>
-    </ClInclude>
-    <ClInclude Include="Config\Defaults.h">
-      <Filter>Config</Filter>
-    </ClInclude>
-    <ClInclude Include="Config\Structrures.h">
-      <Filter>Config</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Mesh.h">
-      <Filter>Model</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Texture.h">
-      <Filter>Model</Filter>
-    </ClInclude>
-    <ClInclude Include="Math\Transform.h">
-      <Filter>Math</Filter>
-    </ClInclude>
     <ClInclude Include="Libraries\imgui\imconfig.h">
       <Filter>Libraries\imgui</Filter>
     </ClInclude>
@@ -163,64 +136,105 @@
     <ClInclude Include="Libraries\imgui\imstb_rectpack.h">
       <Filter>Libraries\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\Graphics.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Application.h" />
-    <ClInclude Include="Config\Config.h">
-      <Filter>Config</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera\FreeCam.h">
-      <Filter>Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera\FirstPersonCamera.h">
-      <Filter>Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Terrain\DiamondSquare.h">
-      <Filter>Objects\Terrain</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Terrain\StaticTerrain.h">
-      <Filter>Objects\Terrain</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Terrain.h">
-      <Filter>Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Window.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Terrain\Procedural.h">
-      <Filter>Objects\Terrain</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Sphere.h" />
-    <ClInclude Include="Graphics\Renderers\DeferredBuffer.h" />
-    <ClInclude Include="Graphics\Renderers\DeferredShader.h" />
-    <ClInclude Include="Graphics\Renderers\LightShader.h" />
-    <ClInclude Include="Graphics\Renderers\DeferredRenderer.h" />
-    <ClInclude Include="Objects\Plane.h" />
-    <ClInclude Include="Graphics\ConstantBuffer.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Effect.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Layouts.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="Libraries\FastNoise.h">
       <Filter>Libraries</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Material.h">
-      <Filter>Model</Filter>
+    <ClInclude Include="Camera\FreeCam.hpp">
+      <Filter>Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Model.h">
-      <Filter>Model</Filter>
+    <ClInclude Include="Camera\FirstPersonCamera.hpp">
+      <Filter>Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Skeleton.h">
-      <Filter>Model</Filter>
+    <ClInclude Include="Config\Config.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Defaults.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Structrures.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Helpers.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Structures.hpp">
+      <Filter>Util</Filter>
     </ClInclude>
     <CLInclude Include="Util\Resource.h">
       <Filter>Util</Filter>
     </CLInclude>
+    <ClInclude Include="Math\Transform.hpp">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Window.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Layouts.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Effect.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ConstantBuffer.hpp">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\PostProcessing.hpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\LightShader.hpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\DeferredShader.hpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\DeferredRenderer.hpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderers\DeferredBuffer.hpp">
+      <Filter>Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Material.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Mesh.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Model.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Skeleton.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Texture.hpp">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\WorldObject.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\WorldLight.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Sphere.hpp" />
+    <ClInclude Include="Objects\Plane.hpp" />
+    <ClInclude Include="Objects\Cube.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\StaticTerrain.hpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\Procedural.hpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Terrain\DiamondSquare.hpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Textures\color.dds">

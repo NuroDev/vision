@@ -1,4 +1,4 @@
-#include "Terrain.h"
+#include "Terrain.hpp"
 
 HRESULT Terrain::Init()
 {

@@ -4,8 +4,8 @@
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
 
-#include "../Config/Defaults.h"
-#include "Mesh.h"
+#include "../Config/Defaults.hpp"
+#include "Mesh.hpp"
 
 class Model
 {

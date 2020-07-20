@@ -1,4 +1,4 @@
-#include "WorldObject.h"
+#include "WorldObject.hpp"
 
 HRESULT WorldObject::Init()
 {

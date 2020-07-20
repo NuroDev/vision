@@ -4,18 +4,18 @@
 
 #include <d3d11.h>
 
-#include "Config/Config.h"
-#include "Graphics/Graphics.h"
-#include "Graphics/Renderers/DeferredRenderer.h"
-#include "Graphics/Renderers/PostProcessing.h"
-#include "Graphics/Window.h"
+#include "Config/Config.hpp"
+#include "Graphics/Graphics.hpp"
+#include "Graphics/Renderers/DeferredRenderer.hpp"
+#include "Graphics/Renderers/PostProcessing.hpp"
+#include "Graphics/Window.hpp"
 #include "Libraries/imgui/imgui_impl_dx11.h"
 #include "Libraries/imgui/imgui_impl_win32.h"
-#include "Objects/Cube.h"
-#include "Objects/Sphere.h"
-#include "Objects/WorldLight.h"
-#include "Objects/Terrain.h"
-#include "Objects/WorldObject.h"
+#include "Objects/Cube.hpp"
+#include "Objects/Sphere.hpp"
+#include "Objects/WorldLight.hpp"
+#include "Objects/Terrain.hpp"
+#include "Objects/WorldObject.hpp"
 #include "Util/Resource.h"
 
 class Application

@@ -1,4 +1,4 @@
-#include "DeferredBuffer.h"
+#include "DeferredBuffer.hpp"
 
 HRESULT DeferredBuffer::Init()
 {

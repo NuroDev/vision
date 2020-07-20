@@ -1,4 +1,4 @@
-#include "FirstPersonCamera.h"
+#include "FirstPersonCamera.hpp"
 
 HRESULT FirstPersonCamera::Init()
 {

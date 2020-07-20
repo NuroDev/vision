@@ -1,4 +1,4 @@
-#include "Config.h"
+#include "Config.hpp"
 
 Config::Config(const char* path)
 {

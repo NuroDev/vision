@@ -3,12 +3,12 @@
 #include <d3d11_1.h>
 #include <DirectXColors.h>
 
-#include "ConstantBuffer.h"
-#include "Layouts.h"
-#include "Window.h"
-#include "../Camera/FirstPersonCamera.h"
-#include "../Config/Structrures.h"
-#include "../Model/Material.h"
+#include "ConstantBuffer.hpp"
+#include "Layouts.hpp"
+#include "Window.hpp"
+#include "../Camera/FirstPersonCamera.hpp"
+#include "../Config/Structrures.hpp"
+#include "../Model/Material.hpp"
 
 using namespace DirectX;
 

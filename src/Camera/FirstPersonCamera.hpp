@@ -3,8 +3,8 @@
 #include <directxmath.h>
 #include <imgui.h>
 
-#include "../Config/Structrures.h"
-#include "../Util/Structures.h"
+#include "../Config/Structrures.hpp"
+#include "../Util/Structures.hpp"
 
 using namespace DirectX;
 

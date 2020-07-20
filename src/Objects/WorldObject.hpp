@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../Graphics/Graphics.h"
-#include "../Math/Transform.h"
-#include "../Model/Model.h"
-#include "../Util/Structures.h"
+#include "../Graphics/Graphics.hpp"
+#include "../Math/Transform.hpp"
+#include "../Model/Model.hpp"
+#include "../Util/Structures.hpp"
 
 using namespace DirectX;
 

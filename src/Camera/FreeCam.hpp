@@ -3,9 +3,9 @@
 #include <directxmath.h>
 #include <imgui.h>
 
-#include "../Config/Structrures.h"
-#include "../Util/Structures.h"
-#include "../Math/Transform.h"
+#include "../Config/Structrures.hpp"
+#include "../Util/Structures.hpp"
+#include "../Math/Transform.hpp"
 
 using namespace DirectX;
 

@@ -1,4 +1,4 @@
-#include "WorldLight.h"
+#include "WorldLight.hpp"
 
 HRESULT WorldLight::Init()
 {

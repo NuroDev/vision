@@ -1,4 +1,4 @@
-#include "Graphics.h"
+#include "Graphics.hpp"
 
 std::unique_ptr<Graphics> Graphics::m_pInstance = std::unique_ptr<Graphics>();
 

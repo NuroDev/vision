@@ -3,7 +3,7 @@
 #include <d3d11.h>
 #include <DirectXMath.h>
 
-#include "../Config/Defaults.h"
+#include "../Config/Defaults.hpp"
 
 using namespace DirectX;
 

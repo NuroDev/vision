@@ -1,4 +1,4 @@
-#include "Window.h"
+#include "Window.hpp"
 
 std::unique_ptr<Window> Window::m_pInstance = std::unique_ptr<Window>();
 

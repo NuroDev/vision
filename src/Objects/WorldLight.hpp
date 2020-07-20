@@ -2,8 +2,8 @@
 
 #include <d3d11.h>
 
-#include "../Util/Structures.h"
-#include "WorldObject.h"
+#include "../Util/Structures.hpp"
+#include "WorldObject.hpp"
 
 class WorldLight : public WorldObject
 {

@@ -2,7 +2,7 @@
 
 #include <DirectXCollision.h>
 
-#include "../Config/Defaults.h"
+#include "../Config/Defaults.hpp"
 
 using namespace DirectX;
 

@@ -5,8 +5,8 @@
 #include <PrimitiveBatch.h>
 #include <VertexTypes.h>
 
-#include "../Graphics.h"
-#include "../../Graphics/Effect.h"
+#include "../Graphics.hpp"
+#include "../../Graphics/Effect.hpp"
 
 using namespace DirectX;
 

@@ -2,8 +2,8 @@
 
 #include <vector>
 
-#include "../Graphics/Graphics.h"
-#include "Texture.h"
+#include "../Graphics/Graphics.hpp"
+#include "Texture.hpp"
 
 class Mesh
 {

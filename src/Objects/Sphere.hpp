@@ -3,7 +3,7 @@
 #include <DirectXMesh.h>
 #include <GeometricPrimitive.h>
 
-#include "WorldObject.h"
+#include "WorldObject.hpp"
 
 class Sphere : public WorldObject
 {

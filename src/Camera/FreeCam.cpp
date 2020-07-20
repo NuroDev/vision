@@ -1,4 +1,4 @@
-#include "FreeCam.h"
+#include "FreeCam.hpp"
 
 HRESULT FreeCam::Init()
 {

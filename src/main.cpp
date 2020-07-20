@@ -1,4 +1,4 @@
-#include "Application.h"
+#include "Application.hpp"
 
 #define _XM_NO_INTRINSICS_
 #define MS_PER_UPDATE 16.6666666667

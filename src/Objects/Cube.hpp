@@ -1,18 +1,18 @@
 #pragma once
 
-#include "WorldObject.h"
+#include "WorldObject.hpp"
 
-class Plane : public WorldObject
+class Cube : public WorldObject
 {
 public:
-	Plane (
+	Cube(
 		std::string name,
 		const unsigned int id,
 		Transform* pTransform = new Transform()
-	) : WorldObject(name, id, pTransform) {};
-	~Plane() { WorldObject::Release(); };
+	) : WorldObject(name, id, pTransform){};
+	~Cube() { WorldObject::Release(); };
 
-	/// [PLANE] Initialize any core object data
+	/// [CUBE] Initialize any core object data
 	HRESULT Init()
 	{
 		HRESULT hr = S_OK;
@@ -50,8 +50,23 @@ public:
 			{XMFLOAT3(-1.0f, 1.0f, 1.0f), XMFLOAT3(0.0f, 0.0f, 1.0f), XMFLOAT2(1.0f, 0.0f), XMFLOAT3(0.0f, 0.0f, 0.0f), XMFLOAT3(0.0f, 0.0f, 0.0f)},
 		};
 		const std::vector<UINT> indices = {
+			3, 1, 0,
+			2, 1, 3,
+
+			6, 4, 5,
+			7, 4, 6,
+
+			11, 9, 8,
+			10, 9, 11,
+
+			14, 12, 13,
+			15, 12, 14,
+
 			19, 17, 16,
 			18, 17, 19,
+
+			22, 20, 21,
+			23, 20, 22
 		};
 
 		// Calculate normals, tangents & bi-normals/bi-tangents for static mesh data
@@ -62,7 +77,7 @@ public:
 		Mesh* pMesh = GetMesh().empty() ? new Mesh(vertices, indices) : GetMesh(0);
 
 		// Set the world object mesh
-		SetMesh({ pMesh });
+		SetMesh(pMesh, 0);
 
 		// Initialize the object	
 		hr = WorldObject::Init();
@@ -73,7 +88,7 @@ public:
 	};
 
 private:
-	/// [PLANE] Calculate the tangent & normal vectors for every face of the cube
+	/// [CUBE] Calculate the tangent & normal vectors for every face of the cube
 	void CalculateModelVectors(std::vector<SimpleVertex>& vertices, const unsigned int vertexCount)
 	{
 		SimpleVertex v1, v2, v3;
@@ -123,8 +138,8 @@ private:
 		}
 	};
 
-	/// [PLANE] TODO: Documentation
-	void CalculateTangentBiNormal(SimpleVertex v0, SimpleVertex v1, SimpleVertex v2, XMFLOAT3& normals, XMFLOAT3& tangents)
+	/// [CUBE] TODO: Documentation
+	void CalculateTangentBiNormal(SimpleVertex v0, SimpleVertex v1, SimpleVertex v2, XMFLOAT3 &normals, XMFLOAT3 &tangents)
 	{
 		XMFLOAT3 edge1(v1.Position.x - v0.Position.x, v1.Position.y - v0.Position.y, v1.Position.z - v0.Position.z);
 		XMFLOAT3 edge2(v2.Position.x - v0.Position.x, v2.Position.y - v0.Position.y, v2.Position.z - v0.Position.z);

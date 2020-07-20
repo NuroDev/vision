@@ -5,10 +5,10 @@
 #include <iostream>
 #include <utility>
 
-#include "../Objects/WorldObject.h"
-#include "Terrain/DiamondSquare.h"
-#include "Terrain/Procedural.h"
-#include "Terrain/StaticTerrain.h"
+#include "../Objects/WorldObject.hpp"
+#include "Terrain/DiamondSquare.hpp"
+#include "Terrain/Procedural.hpp"
+#include "Terrain/StaticTerrain.hpp"
 
 using namespace DirectX;
 

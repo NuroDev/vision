@@ -2,7 +2,7 @@
 
 #include <windows.h>
 
-#include "../Config/Structrures.h"
+#include "../Config/Structrures.hpp"
 #include "../Util/Resource.h"
 
 class Window

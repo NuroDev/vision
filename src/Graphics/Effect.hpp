@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Config/Defaults.h"
+#include "../Config/Defaults.hpp"
 
 struct Effects
 {

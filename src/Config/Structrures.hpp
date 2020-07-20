@@ -2,7 +2,7 @@
 
 #include <windows.h>
 
-#include "Defaults.h"
+#include "Defaults.hpp"
 
 struct ApplicationParameters
 {

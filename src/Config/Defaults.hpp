@@ -6,7 +6,7 @@
 #include <DirectXCollision.h>
 #include <math.h>
 
-#include "../Util/Helpers.h"
+#include "../Util/Helpers.hpp"
 
 using namespace DirectX;
 

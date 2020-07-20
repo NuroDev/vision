@@ -1,4 +1,4 @@
-#include "LightShader.h"
+#include "LightShader.hpp"
 
 HRESULT LightShader::Init()
 {
