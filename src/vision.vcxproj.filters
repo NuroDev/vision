@@ -48,17 +48,20 @@
     <ClCompile Include="Graphics\Window.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Libraries\FastNoise.cpp" />
     <ClCompile Include="Graphics\Renderers\DeferredBuffer.cpp" />
     <ClCompile Include="Graphics\Renderers\DeferredShader.cpp" />
     <ClCompile Include="Graphics\Renderers\LightShader.cpp" />
-    <ClCompile Include="Graphics\ConstantBuffer.cpp" />
-    <ClCompile Include="Model\Model.cpp" />
+    <ClCompile Include="Graphics\ConstantBuffer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\FastNoise.cpp">
+      <Filter>Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Model.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{5c65bb77-486a-4c4e-a1b8-db822f520520}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Assets">
       <UniqueIdentifier>{29a39283-1c14-4dc0-9da2-8ea06352ea2b}</UniqueIdentifier>
     </Filter>
@@ -103,9 +106,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CLInclude Include="Util\Resource.h">
-      <Filter>Resource Files</Filter>
-    </CLInclude>
     <ClInclude Include="Objects\Cube.h">
       <Filter>Objects</Filter>
     </ClInclude>
@@ -191,19 +191,36 @@
     <ClInclude Include="Objects\Terrain\Procedural.h">
       <Filter>Objects\Terrain</Filter>
     </ClInclude>
-    <ClInclude Include="Libraries\FastNoise.h" />
     <ClInclude Include="Objects\Sphere.h" />
     <ClInclude Include="Graphics\Renderers\DeferredBuffer.h" />
     <ClInclude Include="Graphics\Renderers\DeferredShader.h" />
     <ClInclude Include="Graphics\Renderers\LightShader.h" />
     <ClInclude Include="Graphics\Renderers\DeferredRenderer.h" />
     <ClInclude Include="Objects\Plane.h" />
-    <ClInclude Include="Graphics\ConstantBuffer.h" />
-    <ClInclude Include="Model\Material.h" />
-    <ClInclude Include="Graphics\Layouts.h" />
-    <ClInclude Include="Model\Skeleton.h" />
-    <ClInclude Include="Model\Model.h" />
-    <ClInclude Include="Graphics\Effect.h" />
+    <ClInclude Include="Graphics\ConstantBuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Effect.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Layouts.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\FastNoise.h">
+      <Filter>Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Material.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Model.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Skeleton.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <CLInclude Include="Util\Resource.h">
+      <Filter>Util</Filter>
+    </CLInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Textures\color.dds">
