@@ -75,6 +75,13 @@
   </a>
 </details>
 
+<details>
+  <summary>Skeletal Animation / Kinematics (WIP)</summary>
+  
+  #### Model Loading
+  <img alt="Model Loading" src="./.github/assets/kinematics_model_loading.png?raw=true" />
+</details>
+
 ## ❓ About
 
 <details>
