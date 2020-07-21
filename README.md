@@ -19,7 +19,9 @@
   <img alt="Normal Mapping" src="./.github/assets/normal_mapping.gif?raw=true" />
 
   #### Video
-  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/3da86eRz4Tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href='https://youtu.be/3da86eRz4Tc'>
+    <img alt='Video' src='https://img.youtube.com/vi/3da86eRz4Tc/0.jpg' />
+  </a>
 </details>
 
 <br />
@@ -31,7 +33,9 @@
   <img alt="Parallax Mapping" src="./.github/assets/parallax_mapping.gif?raw=true" />
 
   #### Video
-  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/AXFGglWZZ74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href='https://youtu.be/AXFGglWZZ74'>
+    <img alt='Video' src='https://img.youtube.com/vi/AXFGglWZZ74/0.jpg' />
+  </a>
 </details>
 
 <br />
@@ -61,7 +65,9 @@
   <img alt="Post-processing - Vignette" src="./.github/assets/pp_vignette.png?raw=true" />
 
   #### Video
-  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/Bp0RTS6dGhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href='https://youtu.be/Bp0RTS6dGhA'>
+    <img alt='Video' src='https://img.youtube.com/vi/Bp0RTS6dGhA/0.jpg' />
+  </a>
 </details>
 
 ## ❓ About
