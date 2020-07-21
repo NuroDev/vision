@@ -10,6 +10,60 @@
   <br />
 </div>
 
+## ✨ Features
+
+<details>
+  <summary>Normal Mapping</summary>
+  
+  #### Screenshot
+  <img alt="Normal Mapping" src="./.github/assets/normal_mapping.gif?raw=true" />
+
+  #### Video
+  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/3da86eRz4Tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
+<br />
+
+<details>
+  <summary>Parallax Mapping</summary>
+  
+  #### Screenshot
+  <img alt="Parallax Mapping" src="./.github/assets/parallax_mapping.gif?raw=true" />
+
+  #### Video
+  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/AXFGglWZZ74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
+<br />
+
+<details>
+  <summary>Post-processing</summary>
+  
+  #### Blur
+  <img alt="Post-processing - Blur" src="./.github/assets/pp_blur.png?raw=true" />
+
+  #### Gaussian Blur
+  <img alt="Post-processing - Gaussian Blur" src="./.github/assets/pp_gaussian_blur.png?raw=true" />
+
+  #### Color Space
+  <img alt="Post-processing - Color Space" src="./.github/assets/pp_color_space.png?raw=true" />
+
+  #### Color Tint
+  <img alt="Post-processing - Color Tint - Gameboy" src="./.github/assets/pp_color_tint_gameboy.png?raw=true" />
+  <img alt="Post-processing - Color Tint - Mono" src="./.github/assets/pp_color_tint_mono.png?raw=true" />
+  <img alt="Post-processing - Color Tint - Inverted" src="./.github/assets/pp_color_tint_inverted.png?raw=true" />
+  <img alt="Post-processing - Color Tint - Sepia" src="./.github/assets/pp_color_tint_sepia.png?raw=true" />
+
+  #### Pixelation
+  <img alt="Post-processing - Pixelation" src="./.github/assets/pp_pixelation.png?raw=true" />
+
+  #### Vignette
+  <img alt="Post-processing - Vignette" src="./.github/assets/pp_vignette.png?raw=true" />
+
+  #### Video
+  <iframe width="2543" height="1160" src="https://www.youtube.com/embed/Bp0RTS6dGhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</details>
+
 ## ❓ About
 
 <details>
