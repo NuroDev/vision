@@ -24,8 +24,6 @@
   </a>
 </details>
 
-<br />
-
 <details>
   <summary>Parallax Mapping</summary>
   
@@ -37,8 +35,6 @@
     <img alt='Video' src='https://img.youtube.com/vi/AXFGglWZZ74/0.jpg' />
   </a>
 </details>
-
-<br />
 
 <details>
   <summary>Post-processing</summary>
@@ -70,6 +66,15 @@
   </a>
 </details>
 
+<details>
+  <summary>Terrain Generation</summary>
+  
+  #### Video
+  <a href='https://youtu.be/UfZ9p7pJoGE'>
+    <img alt='Video' src='https://img.youtube.com/vi/UfZ9p7pJoGE/0.jpg' />
+  </a>
+</details>
+
 ## ❓ About
 
 <details>
@@ -80,8 +85,6 @@
   In an effort to continue learning some more advanced graphical rendering techniques, I have made some minor modifications to the original project and open sourced it so others are able to both contribute towards the project and also learn from it.
   
 </details>
-
-<br />
 
 <details>
   <summary>Why?</summary>
