@@ -42,6 +42,9 @@
   #### Blur
   <img alt="Post-processing - Blur" src="./.github/assets/pp_blur.png?raw=true" />
 
+  #### Chromatic Aberration
+  <img alt="Post-processing - Chromatic Aberration" src="./.github/assets/pp_chromatic_aberration.gif?raw=true" />
+
   #### Gaussian Blur
   <img alt="Post-processing - Gaussian Blur" src="./.github/assets/pp_gaussian_blur.png?raw=true" />
 
