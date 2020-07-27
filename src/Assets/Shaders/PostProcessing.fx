@@ -122,6 +122,34 @@ float4 ColorTint(float4 diffuse, float3 color)
 }
 
 //--------------------------------------------------------------------
+// Chromatic Aberration (@mhalpenny)
+// Source: https://github.com/mhalpenny/eno.fm/blob/master/babylonMaster/src/Shaders/chromaticAberration.fragment.fx
+//--------------------------------------------------------------------
+float4 ChromaticAberration(float4 diffuse, float2 TexCoord)
+{
+    // Calculate the radius from the center of the screen
+    float2 ScreenPosCenter = float2(TexCoord.x - 0.5, TexCoord.y - 0.5);
+    float radius = sqrt(ScreenPosCenter.x * ScreenPosCenter.x + ScreenPosCenter.y * ScreenPosCenter.y);
+    
+    // Index of refraction of each color channel, causing chromatic dispersion
+    float3 Indices = float3(-0.3, 0.0, 0.3);
+    float XShift = Effects.ChromaticAberrationFactor * radius * 17.0 / Effects.ScreenWidth;
+    float YShift = Effects.ChromaticAberrationFactor * radius * 17.0 / Effects.ScreenHeight;
+
+	// Shifts for red, green & blue values
+    float2 r_coord = float2(TexCoord.x + Indices.r * XShift, TexCoord.y + Indices.r * YShift * 0.5);
+    float2 g_coord = float2(TexCoord.x + Indices.g * XShift, TexCoord.y + Indices.g * YShift * 0.5);
+    float2 b_coord = float2(TexCoord.x + Indices.b * XShift, TexCoord.y + Indices.b * YShift * 0.5);
+    
+    // Sample the texture using the new offset coords
+    diffuse.r = Texture.Sample(PointSampler, r_coord).r;
+    diffuse.g = Texture.Sample(PointSampler, g_coord).g;
+    diffuse.b = Texture.Sample(PointSampler, b_coord).b;
+    
+    return diffuse;
+}
+
+//--------------------------------------------------------------------
 // Vignette (@zachsaw)
 // Source: https://github.com/zachsaw/RenderScripts/blob/master/RenderScripts/ImageProcessingShaders/SweetFX/Vignette.hlsl
 //--------------------------------------------------------------------
@@ -311,6 +339,9 @@ float4 PS(PS_INPUT input) : SV_TARGET
     
     if (Effects.Blur)
         color = Blur(color, input.Tex, (Effects.ScreenHeight / Effects.ScreenWidth));
+    
+    if (Effects.ChromaticAberration)
+        color = ChromaticAberration(color, input.Tex);
     
     if (Effects.Vignette)
         color = Vignette(color, input.Tex);

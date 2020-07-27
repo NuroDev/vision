@@ -32,6 +32,10 @@ struct _Effects
     int VignetteSlope;
     
     int ColorSpace;
+    
+    bool ChromaticAberration;
+    float ChromaticAberrationFactor;
+    
     bool PictureInPicture;
     int ScreenWidth;
     int ScreenHeight;

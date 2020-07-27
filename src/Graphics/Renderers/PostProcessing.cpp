@@ -158,6 +158,16 @@ void PostProcessing::Ui()
 			ImGui::TreePop();
 		}
 
+		if (ImGui::TreeNode("Chromatic Aberration"))
+		{
+			ImGui::Checkbox("Enabled", reinterpret_cast<bool*>(&m_effects.ChromaticAberration));
+
+			if (m_effects.ChromaticAberration)
+				ImGui::SliderFloat("Factor", &m_effects.ChromaticAberrationFactor, 0.1f, 25.0f);
+			
+			ImGui::TreePop();
+		}
+
 		if (ImGui::TreeNode("Color Space"))
 		{
 			enum ColorSpaces { RGB, HSV, YUV, CMY, NUM_SPACES };			
@@ -191,7 +201,10 @@ void PostProcessing::Ui()
 		if (ImGui::TreeNode("Pixelation"))
 		{
 			ImGui::Checkbox("Enabled", reinterpret_cast<bool*>(&m_effects.Pixelate));
-			ImGui::SliderFloat("Factor", &m_effects.PixelationFactor, 0.1f, 25.0f);			
+
+			if (m_effects.Pixelate)
+				ImGui::SliderFloat("Factor", &m_effects.PixelationFactor, 0.1f, 25.0f);
+			
 			ImGui::TreePop();
 		}
 		
