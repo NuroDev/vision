@@ -37,9 +37,11 @@ struct Defaults
 	{
 		static constexpr bool BlurBox = false;
 		static constexpr bool BlurGaussian = false;
+		static constexpr float ChromaticAberrationFactor = 1.0f;
 		static constexpr bool ColorTint = false;
 		static constexpr bool PictureInPicture = false;
 		static constexpr bool Pixelation = false;
+		static constexpr float PixelationFactor = 0.1f;
 		static constexpr bool Vignette = false;
 		static constexpr float VignetteAmount = -1.0f;
 		static constexpr float VignetteRadius = 1.0f;
